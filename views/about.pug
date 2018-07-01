@@ -1,0 +1,77 @@
+extends layout
+block header
+    header
+        nav
+            ul.nav__main
+                li.nav__item.nav__left
+                    a(href="/") home
+                li.nav__item.nav__left.active-nav
+                    a(href="/about") about
+                li.nav__item.nav__right
+                    a(href="/work") work
+                li.nav__item.nav__right
+                    a(href="/contact") contact
+block main
+      .inner
+        .about__section
+            .aboutme
+                .aboutme--header
+                    h2 About ME
+                .aboutme--content
+                    p Just so you know a little bit more about me, my name is 
+                        strong LOAI KAHEL, 
+                        |I am 25 years old and I was born Syria. A few years back I moved to Germany, and i'm based in Oberhausen right now.
+                    p As i mentioned if you read, i had many experiences in my life that made me flexible, ambitious, fast learner, have good communication skills with reliability at work, and full respect for the time.
+            .skills
+                .skills--header
+                    h2 Programing Skills
+                .skills--content
+                    .skills--border--frontend 
+                        .skills--content--frontend
+                            .skills--content-header
+                                h3 Front-End
+                            .skills--content-body
+                                h5 LANGUAGES
+                                ul
+                                    li html
+                                    li css3
+                                    li javascript
+                                h5 FRAMEWORKS
+                                ul
+                                    li react
+                                    li jquery
+                                    li bootstrap
+                                    li scss / Sass  
+                    .skills--border--tools     
+                        .skills--content--tools
+                            .skills--content-header
+                                h3 Tools
+                            .skills--content-body 
+                                h5 General Tools
+                                ul
+                                    li pug
+                                    li webpack
+                                    li gulp 
+                                    li ajax
+                                    li VS Code
+                                ul(style='padding-left: 5%;')
+                                    li npm
+                                    li ubuntu
+                                    li api
+                                    li terminal
+                                    li git
+                    .skills--border--backend
+                        .skills--content--backend
+                            .skills--content-header
+                                h3 Back-End
+                            .skills--content-body
+                                h5 LANGUAGES
+                                ul
+                                    li NODE JS
+                                    li MongoDB
+                                    li MYSQL
+                                h5 FRAMEWORKS
+                                ul
+                                    li Express JS
+                                    li Socket.io
+                                    li Mongoose

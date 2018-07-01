@@ -1,0 +1,136 @@
+.intro {
+    .intro__aboutMe {
+        display: flex;
+        background: #f9f9f9;
+        padding: 2% 0 3%;
+        position: relative;
+        .intro__about {
+            width: 50%;
+            .intro__about--header{
+                width: 59%;
+                margin: 0 auto;
+                padding: 6% 0 0;
+                h2 {
+                    width: 40%;
+                    text-align: center;
+                    background: #000;
+                    color: #fff;
+                    padding: 2%;
+                    border-radius: 10px;
+                    box-shadow: -3px 4px 10px #000;
+                }
+            }
+            .intro__about--content {
+                padding: 8% 0 0;
+                p {
+                    width: 60%;
+                    margin: 0 auto;
+                    font-size: 1.7em;
+                    line-height: 1.5em;
+                    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+                    a{
+                        color: #4E32F0;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        .intro__skills {
+            width: 50%;
+            color: #fff;
+            position: relative;
+            .intro__skills--header {
+                width: 22%;
+                margin: 0 auto;
+                padding: 6% 0 0;
+                h2 {
+                    text-align: center;
+                    background: #000;
+                    padding: 6%;
+                    margin-right: -35px;
+                    border-radius: 10px;
+                    box-shadow: -3px 4px 10px #000;
+                }
+            }
+            .intro__skills--content {
+                display: flex;
+                justify-content: space-evenly;
+                padding: 10% 0 0;
+                .skills--frontend {
+                    height: 500px;
+                    .frontend--border {
+                        width: 220px;
+                        border: 9px solid #00FFD4;
+                        margin-bottom: -20px; 
+                    }
+                    .frontend--content {
+                        transform: translate(20px, -99%);
+                        background: rgba(0, 0, 0, .98);
+                        box-shadow: -3px 4px 10px #000;
+                        padding: 10%;
+                        h4 {
+                            font-size: 1.3em;
+                            padding-bottom: 8%;
+                            color: #00FFD4;
+                        }
+                        .frontend--content-body {
+                            color: #fff;
+                            h5 {
+                                padding-bottom: 4%;
+                                border-bottom: 1px solid #fff;
+                            }
+                            ul {
+                                padding: 6% 0;
+                            }
+                        }
+                    }
+                }
+                .skills--backend {
+                    height: 400px;
+                    .backend--border {
+                        width:210px;
+                        border: 9px solid #4E32F0;
+                        margin-bottom: -15px;
+                    }
+                    .backend--content {
+                        transform: translate( 20px,-100%);
+                        background: rgba(0, 0, 0, .98);
+                        box-shadow: -3px 4px 10px #000;
+                        padding: 10%;
+                        h4 {
+                            font-size: 1.3em;
+                            padding-bottom: 8%;
+                            color: #4E32F0;
+                        }
+                        .backend--content-body {
+                            color: #fff;
+                            h5 {
+                                padding-bottom: 4%;
+                                border-bottom: 1px solid #fff;
+                            }
+                            ul {
+                                padding: 6% 0;
+                            }
+                        }
+                    }
+                }                
+            }
+        }
+    }
+    .intro__about--arrow {
+        position: absolute;
+        bottom: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 1s ease-in-out;
+        transition-delay: 0;
+        a {
+            img {
+                box-shadow: 1px 30px 22px #ccc;
+                border-radius: 50%;
+                animation: downTop 1.8s linear infinite;
+            }
+        }
+    }
+}

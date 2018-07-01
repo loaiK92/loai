@@ -1,0 +1,58 @@
+mixin header(...items)
+      header
+            nav
+                  ul.nav__main
+                        each item in items
+                              li.nav__item
+                                    a(href=`/${item}`) !{item}
+                  
+
+
+
+doctype html
+html
+      head
+            meta(charset="UTF-8")
+            meta(http-equiv="X-UA-Compatible", content="ie=edge")
+            meta(name='viewport', content='width=device-width, initial-scale=1')
+            meta(name='description', content='')
+            meta(name='keywords', content='')
+            meta(name='author', content='loai kahrel')
+            meta(name='copyright', content='Copyright 2018')
+            title Loai Portfolio
+            link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.13/css/all.css')
+            link(rel='stylesheet', type='text/css', href='https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css')
+            link(rel='stylesheet', type='text/css', href='https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css')
+            block cssLink
+                  link(rel="styleSheet" href="./dist/main.css" type="text/css")
+
+      body
+            
+            block header
+            block main
+            
+            footer
+                  .footer__content
+                        .footer__content-body
+                              .footer-name.item
+                                    img(src='https://png.icons8.com/ios-glyphs/20/000000/user-male.png')
+                                    p LOAI KAHEL
+                              .address.item
+                                    img(src='https://png.icons8.com/ios/20/000000/home-filled.png')
+                                    p GrenzStr. 72 Oberhausen 46045
+                              .footer-email.item
+                                    img(src='https://png.icons8.com/ios-glyphs/20/000000/new-post.png')
+                                    p loaikahel723@gmail.com
+                              .phone.item
+                                    img(src='https://png.icons8.com/ios/20/000000/phone-filled.png')
+                                    p 015209429295
+                              
+                        p &copy; Made With Love 
+                              span &#128420; 
+                              | - 2018
+      
+      block scripts
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js")
+            script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js')
+            script(src='https://unpkg.com/scrollreveal/dist/scrollreveal.min.js')
+            script(src="./dist/main.bundle.js")

@@ -1,0 +1,30 @@
+extends layout
+block header
+    header
+        nav
+            ul.nav__main
+                li.nav__item.nav__left
+                    a(href="/") home
+                li.nav__item.nav__left
+                    a(href="/about") about
+                li.nav__item.nav__right
+                    a(href="/work") work
+                li.nav__item.nav__right.active-nav
+                    a(href="/contact") contact
+block main
+        .inner
+            .contact__section
+                .contact__form
+                    h2 Get in Touch
+                    p Don’t Hesitate to Drop me an Email or Contact me Via my Social Profiles.
+                    .form-data
+                        label.name(for='name') Name
+                        input#name.input(type='text')
+                        label.email(for='email') Email
+                        input#email.input(type='email')
+                    .form-msg
+                        label.msg(for='msg') How can I help?
+                        textarea#msg.input(rows='5')
+                    .form-submit
+                        input.button(type='submit', value='Send')
+

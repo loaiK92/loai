@@ -1,0 +1,61 @@
+*, html{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: {
+        family: 'Rajdhani', sans-serif;
+        size: 18px;
+    }
+    li{
+        list-style: none;
+    }
+    .active-nav {        
+        a{
+            color: #00FFD4 !important;
+            border-bottom: 1px solid #00FFD4;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+        }
+    }
+    .button {
+        background: #00FFD4;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 1.2em;
+        padding: 15px 25px 10px;
+        box-shadow: 0px 0px 10px #00FFD4;
+    }
+    .slick-dots {
+        .slick-active {
+            button{
+                background: #00FFD4 !important;
+            }
+        }
+    }
+    .input:focus {
+        outline: none;
+    }
+    .animate-label {
+        transform: translateY(-15px);
+        font-size: 15px;
+        color: #00ffd4 !important;
+    }
+    .animate-input {
+        border-bottom: 1px solid #00ffd4 !important;
+    }
+    .logo {
+        img {
+            width: 75px;
+            height: 75px;
+            transform: rotate(-45deg);
+            margin-top: -10px;
+        }
+    }
+    .inner{
+        
+    }
+}

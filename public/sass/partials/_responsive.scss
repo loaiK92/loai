@@ -1,0 +1,388 @@
+@media (max-width: 1400px){
+    .intro__home--content {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 1200px){
+    .intro__home--content {
+        font-size: .6em;
+        h1 {
+            letter-spacing: 10px !important;
+        }
+        h4 {
+            margin: 23px -60px 0 0 !important;
+        }
+    }
+    .intro__aboutMe {
+        font-size: .8em;
+        .intro__about--content {
+            p {
+                width: 80% !important;
+            }
+        }
+        .intro__skills {
+            padding: 0 0 10%;
+            .intro__skills--content {
+                .skills--frontend {
+                    width: 170px !important;
+                    height: 300px !important;
+                    .frontend--border {
+                        width: 90% !important;
+                        height: 84%!important;
+                        border: 6px solid #00FFD4 !important;
+                    }
+                    .frontend--content {
+                        transform: translate(15px, -98%) !important;
+                    }
+                }
+                .skills--backend {
+                    width: 170px !important;
+                    height: 300px !important;
+                    .backend--border {
+                        width: 90% !important;
+                        height: 83%!important;
+                        border: 6px solid #4E32F0 !important;
+                    }
+                    .backend--content {
+                        transform: translate(15px, -100%) !important;
+                    }
+                }
+            }
+        }
+    }
+    .intro__qoutes, .intro__work, .intro__contact, .footer__content{
+        font-size: .8em;
+    }
+    .intro__qoutes--content {
+            width: 65% !important;
+    }
+    .about__section {
+        font-size: .8em;
+        .aboutme--header {
+            width: 20% !important;
+        }
+        .skills--header {
+            width: 25% !important;
+        }
+        .skills--border--frontend, .skills--border--tools, .skills--border--backend {
+            width: 23% !important;
+            border-width: 7px !important;
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .intro__home--content {
+        font-size: .4em;
+        h1 {
+            letter-spacing: 5px !important;
+            margin-right: 0 !important;
+        }
+        h4 {
+            letter-spacing: 1.1px !important;
+            margin: 15px 5px 0 0 !important;
+        }
+    }
+
+    ul.nav__main {
+        justify-content: space-evenly !important;
+        font-size: .8em;
+    }
+
+    .intro__aboutMe {
+        font-size: .5em;
+        .intro__skills {
+            .intro__skills--content {
+                .skills--frontend {
+                    width: 140px !important;
+                    height: 200px !important;
+                    .frontend--content {
+                        transform: translate(10px, -96%) !important;
+                    }
+                }
+                .skills--backend {
+                    width: 140px !important;
+                    height: 200px !important;
+                    .backend--content {
+                        transform: translate(10px, -99%) !important;
+                    }
+                }
+            }
+        }
+    }
+    .intro__qoutes, .intro__work, .intro__contact, .footer__content{
+        font-size: .6em;
+    }
+    .intro__qoutes--content {
+            width: 65% !important;
+    }
+    .button {
+        border-radius: 5px !important;
+        padding: 10px 15px 6px !important;
+    }
+    .arrow-bottom {
+        img {
+            width: 35px !important;
+        }
+    }
+    .intro__contact--social {
+        img {
+            width: 35px !important;
+        }
+    }
+    .about__section {
+        font-size: .6em;
+        .aboutme--header {
+            width: 20% !important;
+        }
+        .skills--header {
+            width: 25% !important;
+        }
+        .skills--border--frontend, .skills--border--tools, .skills--border--backend {
+            width: 23% !important;
+            border-width: 5px !important;
+        }
+    }
+    .contact__section {
+        font-size: .8em;
+        .contact__form {
+            width: 100% !important;
+        }
+    }
+}
+
+
+
+@media (max-width: 700px){
+    .intro__home--content {
+        font-size: .3em;
+        h1 {
+            letter-spacing: 3px !important;
+            margin-right: 0 !important;
+        }
+        h4 {
+            letter-spacing: 1.1px !important;
+            margin: 12px -6px 0 0 !important;
+        }
+    }
+
+    ul.nav__main {
+        font-size: .7em;
+    }
+
+    .intro__aboutMe {
+        font-size: .5em;
+        display: block !important;
+        .intro__about {
+            width: 100% !important;
+            padding: 0 0 5% !important;
+            .intro__about--header {
+                width: 100% !important;
+                h2 {
+                    width: 20% !important;
+                    margin:  0 auto !important;
+                    padding: 1% !important;
+                    border-radius: 5px !important;
+                }
+            }
+            .intro__about--content {
+                padding: 4% 0 0 !important;
+                p {
+                    width: 70% !important;
+                }
+            }
+        }
+        .intro__skills {
+            width: 100% !important;
+            padding: 0 0 5% !important;
+            .intro__skills--header {
+                width: 100% !important;
+                h2 {
+                    width: 20% !important;
+                    margin:  0 auto !important;
+                    padding: 1% !important;
+                    border-radius: 5px !important;
+                }
+            }
+            .intro__skills--content {
+                font-size: 1.4em !important;
+                .skills--frontend {
+                    width: 35% !important;
+                    height: 285px !important;
+                    .frontend--content {
+                        transform: translate(10px, -96%) !important;
+                    }
+                }
+                .skills--backend {
+                    width: 35% !important;
+                    height: 285px !important;
+                    .backend--content {
+                        transform: translate(10px, -99%) !important;
+                    }
+                }
+            }
+        }
+    }
+    .intro__about--arrow {
+        display: none !important;
+    }
+    .intro__qoutes, .intro__work, .intro__contact, .footer__content{
+        font-size: .5em;
+    }
+    .intro__work {
+        .intro__work--header {
+            h2 {
+                width: 20% !important;
+                border-radius: 5px !important;
+            }
+        }
+    }
+    .intro__qoutes--content {
+            width: 75% !important;
+    }
+    .button {
+        border-radius: 5px !important;
+        padding: 10px 15px 6px !important;
+    }
+    .arrow-bottom {
+        img {
+            width: 35px !important;
+        }
+    }
+    .intro__contact--social {
+        img {
+            width: 30px !important;
+        }
+    }
+    .footer__content {
+        .item {
+            img {
+                width: 15px !important;
+                height: 15px !important;
+            }
+        }
+    }
+    .about__section {
+        font-size: .5em;
+        .aboutme--header {
+            width: 20% !important;
+            h2 {
+                border-radius: 5px !important;
+            }
+        }
+        .skills--header {
+            width: 28% !important;
+            h2 {
+                border-radius: 5px !important;
+            }
+        }
+        .skills--border--frontend, .skills--border--tools, .skills--border--backend {
+            width: 26% !important;
+            border-width: 5px !important;
+        }
+    }
+    .contact__section {
+        font-size: .65em;
+        .contact__form {
+            width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .intro__home--content {
+        font-size: .2em;
+        h1 {
+            letter-spacing: 2px !important;
+        }
+        h4 {
+            letter-spacing: 1px !important;
+            margin: 9px -10px 0 0 !important;
+        }
+    }
+
+    ul.nav__main {
+        font-size: .6em;
+    }
+
+    .intro__aboutMe {
+        font-size: .45em;
+        .intro__about {
+            .intro__about--header {
+                width: 100% !important;
+            }
+            .intro__about--content {
+                padding: 4% 0 0 !important;
+                p {
+                    width: 80% !important;
+                }
+            }
+        }
+        .intro__skills {
+            .intro__skills--content {
+                font-size: 1.4em !important;
+                .skills--frontend {
+                    width: 40% !important;
+                    height: 245px !important;
+                    .frontend--content {
+                        transform: translate(10px, -96%) !important;
+                    }
+                }
+                .skills--backend {
+                    width: 40% !important;
+                    height: 245px !important;
+                    .backend--content {
+                        transform: translate(10px, -98%) !important;
+                    }
+                }
+            }
+        }
+    }
+    .intro__qoutes, .intro__work, .intro__contact, .footer__content{
+        font-size: .4em;
+    }
+    .intro__qoutes--content {
+            width: 85% !important;
+    }
+    .button {
+        border-radius: 5px !important;
+        padding: 5px 8px 4px !important;
+    }
+    .arrow-bottom {
+        display: none !important;
+        img {
+            width: 35px !important;
+        }
+    }
+    .intro__contact--social {
+        img {
+            width: 20px !important;
+        }
+    }
+    .about__section {
+        font-size: .4em;
+        .aboutme--header {
+            width: 20% !important;
+            padding: 5% 0 2% !important;
+        }
+        .aboutme--content {
+            p {
+                font-size: 1.6em !important;
+            }
+        }
+        .skills--header {
+            width: 35% !important;
+        }
+        .skills--border--frontend, .skills--border--tools, .skills--border--backend {
+            width: 28% !important;
+            border-width: 3px !important;
+        }
+    }
+    .contact__section {
+        font-size: .50em;
+        .contact__form {
+            width: 100% !important;
+        }
+    }
+}

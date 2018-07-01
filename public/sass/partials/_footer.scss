@@ -1,0 +1,29 @@
+footer {
+    // background: #000;
+    // color: #fff;
+    .footer__content {
+        padding: 1% 0;
+        .footer__content-body {
+            padding: 1% 0;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .item{
+                display: flex;
+                flex-wrap: wrap;
+                p {
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                    transform: scaleY(1.2);
+                    padding-left: 10px;
+                }
+            }
+        }
+        p {
+            text-align: center;
+            span {
+                color: rgb(214, 46, 46);
+            }
+        }
+    }
+}

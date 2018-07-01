@@ -1,0 +1,31 @@
+header{
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, .95);
+    z-index: 15;
+    // border-bottom: 1px solid #999;
+    nav{
+        ul.nav__main {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            li.nav__item {
+                padding: 1% 2%;
+                list-style: none;
+                text-transform: uppercase;
+                a {
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 1.1em;
+                    letter-spacing: 1.5px;
+                    text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+                    &:hover {
+                        text-decoration: none;
+                        color: #00FFD4;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+extends layout
+block main
+      .inner
+            .intro
+                  .intro__home#home(data-link='#home')
+                        .intro__home--content.cf
+                              h1 LOAI KAHEL
+                              h4 Web Developer Based in Oberhausen
+                        .intro__home--arrow.arrow-bottom
+                              a(href='#about' data-scroll)
+                                    img(src='https://png.icons8.com/ios/50/ffffff/circled-chevron-down.png' class="arrow")
+                  header#header
+                        nav
+                              ul.nav__main
+                                    li.nav__item.nav__left.active-nav
+                                          a(href="#home" data-scroll class='home-anchor') home
+                                    li.nav__item.nav__left
+                                          a(href="#about" data-scroll class='about-anchor') about
+                                    li.nav__item.nav__right
+                                          a(href="#work" data-scroll class='work-anchor') work
+                                    li.nav__item.nav__right
+                                          a(href="#contact" data-scroll class='contact-anchor') contact
+
+                  .intro__aboutMe#about
+                        .intro__about
+                              .intro__about--header
+                                    h2 About ME
+                              .intro__about--content
+                                    p Hey I'm 
+                                          strong Loai.
+                                    p A front-end web developer who enjoy coding and inventing something new with 
+                                          strong HTML, CSS, JAVASCRIPT And More. 
+                                          | If you have curiosity to know more about me and more about my skills,  
+                                          a(href="/about") read more...
+                        .intro__skills
+                              .intro__skills--header
+                                    h2 SKILLS
+                              .intro__skills--content
+                                    .skills--frontend
+                                          .frontend--border
+                                          .frontend--content
+                                                a(href="/about")
+                                                      h4 FRONT-END
+                                                      .frontend--content-body
+                                                            h5 LANGUAGES
+                                                            ul
+                                                                  li HTML
+                                                                  li CSS3
+                                                                  li Javascript
+                                                            h5 FRAMEWORKS
+                                                            ul
+                                                                  li React JS
+                                                                  li Jquery
+                                                                  li Bootstrap
+                                    .skills--backend
+                                          .backend--border
+                                          .backend--content
+                                                a(href="/about")
+                                                      h4 BACK-END
+                                                      .backend--content-body
+                                                            h5 LANGUAGES
+                                                            ul
+                                                                  li NODE JS
+                                                                  li MongoDB
+                                                                  li MYSQL
+                                                            h5 FRAMEWORKS
+                                                            ul
+                                                                  li Express JS
+                                                                  li Socket.io
+                                                                  li Mongoose
+                        .intro__about--arrow.arrow-bottom
+                              a(href='#work' data-scroll)
+                                    img(src='https://png.icons8.com/ios/50/000000/circled-chevron-down.png' class="arrow")
+                  .intro__work#work
+                        .intro__work--header
+                              h2 Work
+                        .intro__work--content 
+                              h1 Coming Soon ...
+
+
+                  .intro__qoutes
+                        h2 Experience And Competencies
+                        .intro__qoutes--content
+                              .intro__qoutes--items
+                                    li.intro__qoutes--li
+                                          blockquote 
+                                                p  I'm not only a web developer, i have several experiences in life. i worked in my semesters breaks in 
+                                                      code Pizza restaurant 
+                                                      | and a 
+                                                      code taxi driver 
+                                                      |and many other things.
+                                                p So i'm 
+                                                      code flexible 
+                                                      |person who can 
+                                                      code work under pressure
+                                                      |, with good 
+                                                      code communication skills
+                                                      |, and 
+                                                      code ambitious. 
+                  .intro__contact#contact
+                        .intro__contact--content
+                              h2 
+                                    code Got Your Attention ?
+                              h2 
+                                    code I'm Available For a Job Now
+                              button.button(onclick=`location.href='/contact'`) GET IN TOUCH
+                        .intro__contact--social
+                              a(href="https://github.com/loaiK92?tab=repositories" target="_blank")
+                                    img(src='https://png.icons8.com/ios-glyphs/50/000000/github.png')
+                              a(href="https://www.xing.com/app/startpage" target="_blank")
+                                    img(src='https://png.icons8.com/material/45/000000/xing.png')
+                              a(href="https://www.linkedin.com/feed/" target="_blank")
+                                    img(src='https://png.icons8.com/ios/45/000000/linkedin-circled-filled.png')
+                              
+
+
+
+                              
+
