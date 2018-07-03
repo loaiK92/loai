@@ -15,7 +15,7 @@ app.use('/', routes);
 
 
 
-const port = process.env.port || 8800;
+const port = process.env.port || 80;
 
 app.listen(port, ()=>{
       console.log(`listening to port ${port}`);  
