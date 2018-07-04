@@ -16,7 +16,7 @@ const javascript = {
 const postcss = {
   loader: 'postcss-loader',
   options: {
-    plugins() { return [autoprefixer({ browsers: 'last 4 versions' })]; }
+    plugins() { return [autoprefixer({ browsers: 'last 6 versions' })]; }
   }
 };
 
@@ -25,7 +25,7 @@ const styles = {
   test: /\.scss$/,
   use: ExtractTextPlugin.extract({
     fallback: 'style-loader',
-    use: [{loader: 'css-loader', options: { minimize: true } }, 'sass-loader']
+    use: [{loader: 'css-loader', options: { minimize: false } },postcss, 'sass-loader']
   })
 };
 
