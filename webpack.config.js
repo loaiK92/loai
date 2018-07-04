@@ -25,7 +25,7 @@ const styles = {
   test: /\.scss$/,
   use: ExtractTextPlugin.extract({
     fallback: 'style-loader',
-    use: [{loader: 'css-loader', options: { minimize: false } },postcss, 'sass-loader']
+    use: [{loader: 'css-loader', options: { minimize: true } },postcss, 'sass-loader']
   })
 };
 
