@@ -133,6 +133,11 @@
   .intro__contact,
   .footer__content {
     font-size: 0.6em;
+    .item {
+      p {
+        padding-top: 5px !important;
+      }
+    }
   }
   .intro__qoutes--content {
     width: 65% !important;
@@ -180,6 +185,12 @@
     font-size: 0.8em;
     .contact__form {
       width: 100% !important;
+      .form-data {
+        label[for="email"] {
+          left: 53.6%;
+          top: 0;
+        }
+      }
     }
   }
 }
@@ -326,7 +337,19 @@
     font-size: 0.65em;
     .contact__form {
       width: 100% !important;
+      .form-data {
+        label {
+          top: 5px !important;
+        }
+        label[for="email"] {
+          left: 54.6% !important;
+        }
+      }
     }
+  }
+  .animate-label {
+    transform: translateY(-10px) !important;
+    font-size: 12px !important;
   }
 }
 
@@ -384,6 +407,17 @@
   .intro__contact,
   .footer__content {
     font-size: 0.4em;
+    .item {
+      margin: 0 5px !important;
+      p {
+        padding-left: 5px !important;
+        padding-top: 2px !important;
+      }
+      img {
+        width: 12px !important;
+        height: 12px !important;
+      }
+    }
   }
   .intro__qoutes--content {
     width: 85% !important;
@@ -428,6 +462,18 @@
     font-size: 0.5em;
     .contact__form {
       width: 100% !important;
+      .form-data {
+        label {
+          top: 10px !important;
+        }
+        label[for="email"] {
+          left: 57.6% !important;
+        }
+      }
     }
+  }
+  .animate-label {
+    transform: translateY(-10px) !important;
+    font-size: 10px !important;
   }
 }

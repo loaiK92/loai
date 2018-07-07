@@ -14,17 +14,17 @@ block header
 block main
         .inner
             .contact__section
-                .contact__form
+                form.contact__form(action='/contact/submit' method='POST')
                     h2 Get in Touch
                     p Don’t Hesitate to Drop me an Email or Contact me Via my Social Profiles.
                     .form-data
                         label.name(for='name') Name
-                        input#name.input(type='text')
+                        input#name.input(type='text' name='name')
                         label.email(for='email') Email
-                        input#email.input(type='email')
+                        input#email.input(type='email' name='email')
                     .form-msg
                         label.msg(for='msg') How can I help?
-                        textarea#msg.input(rows='5')
+                        textarea#msg.input(rows='5' name='text')
                     .form-submit
                         input.button(type='submit', value='Send')
 

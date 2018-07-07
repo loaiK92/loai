@@ -2,6 +2,7 @@ import "../sass/style.scss";
 import SweetScroll from "sweet-scroll";
 import contactFrom from "./mudoles/contactForm";
 import all from "./mudoles/animation";
+import submitForm from "./mudoles/submitForm";
 const MenuSpy = require("menuspy");
 
 // control scroll event in the page from SweetScroll
@@ -13,7 +14,7 @@ document.addEventListener(
       header: "[data-scroll-header]",
       duration: 1500,
       easing: "easeOutQuint",
-      offset: -56,
+      offset: -24,
       vertical: true,
       horizontal: false,
       cancellable: true,
@@ -31,7 +32,11 @@ const element = document.getElementById("header");
 const ms = new MenuSpy(element, {
   menuItemSelector: 'a[href^="#"]',
   activeClass: "active-nav",
-  threshold: 56,
+  threshold: 30,
   enableLocationHash: true,
   hashTimeout: 600
 });
+
+// handle submit function
+const form = document.querySelector(".contact__form");
+form.addEventListener("submit", submitForm);
