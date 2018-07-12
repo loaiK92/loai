@@ -53,29 +53,29 @@ html
       block scripts
             script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js")
             script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js')
+            script(src='//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js')
             script(src='https://unpkg.com/scrollreveal/dist/scrollreveal.min.js')
             script(src="./dist/main.bundle.js")
-            script(src='//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js')
-            script.
-                  if (annyang) {
-                  // Let's define a command.
-                  var commands = {
-                  'go to home': function() { window.location="http://localhost:8080/#home";  },
-                  'go to about': function() { window.location="http://localhost:8080/#about"; },
-                  'go to work': function() { window.location="http://localhost:8080/#work";  },
-                  'go to contact': function() { window.location="http://localhost:8080/#contact";  },
-                  'get in touch': function() { window.location="http://localhost:8080/contact";  },
-                  'home': function() { window.location="http://localhost:8080/#home";  },
-                  'about': function() { window.location="http://localhost:8080/about";  },
-                  'work': function() { window.location="http://localhost:8080/work";  },
-                  'contact': function() { window.location="http://localhost:8080/contact";  },
-                  'up': function() { window.location="http://localhost:8080/#home";  },
-                  'down': function() { window.location="http://localhost:8080/#contact";  },
-                  };
+            //- script.
+            //-       if (annyang) {
+            //-       // Let's define a command.
+            //-       var commands = {
+            //-       'go to home': function() { window.location="http://localhost:8080/#home";  },
+            //-       'go to about': function() { window.location="http://localhost:8080/#about"; },
+            //-       'go to work': function() { window.location="http://localhost:8080/#work";  },
+            //-       'go to contact': function() { window.location="http://localhost:8080/#contact";  },
+            //-       'get in touch': function() { window.location="http://localhost:8080/contact";  },
+            //-       'home': function() { window.location="http://localhost:8080/#home";  },
+            //-       'about': function() { window.location="http://localhost:8080/about";  },
+            //-       'work': function() { window.location="http://localhost:8080/work";  },
+            //-       'contact': function() { window.location="http://localhost:8080/contact";  },
+            //-       'up': function() { window.location="http://localhost:8080/#home";  },
+            //-       'down': function() { window.location="http://localhost:8080/#contact";  },
+            //-       };
 
-                  // Add our commands to annyang
-                  annyang.addCommands(commands);
-                  // Start listening.
-                  annyang.start();
-                  console.log('hiii')
-                  }
+            //-       // Add our commands to annyang
+            //-       annyang.addCommands(commands);
+            //-       // Start listening.
+            //-       annyang.start();
+            //-       console.log('hiii')
+            //-       }

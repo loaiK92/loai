@@ -41,18 +41,51 @@ const ms = new MenuSpy(element, {
 // const form = document.querySelector(".contact__form");
 // form.addEventListener("submit", submitForm);
 
-// if (annyang) {
-//   // Let's define a command.
-//   var commands = {
-//     hello: function() {
-//       alert("Hello world!");
-//     }
-//   };
+if (annyang) {
+  // Let's define a command.
+  var commands = {
+    "go to home": function() {
+      window.location = "http://localhost:8080/#home";
+    },
+    "go to about": function() {
+      window.location = "http://localhost:8080/#about";
+    },
+    "go to work": function() {
+      window.location = "http://localhost:8080/#work";
+    },
+    "go to contact": function() {
+      window.location = "http://localhost:8080/#contact";
+    },
+    "get in touch": function() {
+      window.location = "http://localhost:8080/contact";
+    },
+    "home": function() {
+      window.location = "http://localhost:8080/#home";
+    },
+    "about": function() {
+      window.location = "http://localhost:8080/about";
+    },
+    "work": function() {
+      window.location = "http://localhost:8080/work";
+    },
+    "contact": function() {
+      window.location = "http://localhost:8080/contact";
+    },
+    "up": function() {
+      window.location = "http://localhost:8080/#home";
+    },
+    "down": function() {
+      window.location = "http://localhost:8080/#contact";
+    },
+    "name": function() {
+      document.querySelector('#name').focus();
+      console.log('works')
+    }
+  };
 
-//   // Add our commands to annyang
-//   annyang.addCommands(commands);
-
-//   // Start listening.
-//   annyang.start();
-//   console.log("start");
-// }
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+  // Start listening.
+  annyang.start();
+  console.log("hiii");
+}
