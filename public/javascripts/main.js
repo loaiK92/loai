@@ -2,7 +2,7 @@ import "../sass/style.scss";
 import SweetScroll from "sweet-scroll";
 import contactFrom from "./mudoles/contactForm";
 import all from "./mudoles/animation";
-import submitForm from "./mudoles/submitForm";
+// import submitForm from "./mudoles/submitForm";
 const MenuSpy = require("menuspy");
 
 // control scroll event in the page from SweetScroll
@@ -38,10 +38,6 @@ const ms = new MenuSpy(element, {
 });
 
 // handle submit function
-<<<<<<< Updated upstream
-const form = document.querySelector(".contact__form");
-form.addEventListener("submit", submitForm);
-=======
 // const form = document.querySelector(".contact__form");
 // form.addEventListener("submit", submitForm);
 
@@ -60,4 +56,3 @@ form.addEventListener("submit", submitForm);
 //   annyang.start();
 //   console.log("start");
 // }
->>>>>>> Stashed changes
