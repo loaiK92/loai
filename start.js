@@ -26,7 +26,7 @@ app.set("views", path.join(__dirname, "views"));
 
 app.use("/", routes);
 
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 8080;
 
 app.listen(port, () => {
   console.log(`listening to port ${port}`);
