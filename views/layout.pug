@@ -60,9 +60,19 @@ html
                   if (annyang) {
                   // Let's define a command.
                   var commands = {
-                  'go': function() { alert('Hello world!'); },
-                  'bye': function() { alert('bye bye world!'); }
+                  'go to home': function() { window.location="http://localhost:8080/#home";  },
+                  'go to about': function() { window.location="http://localhost:8080/#about"; },
+                  'go to work': function() { window.location="http://localhost:8080/#work";  },
+                  'go to contact': function() { window.location="http://localhost:8080/#contact";  },
+                  'get in touch': function() { window.location="http://localhost:8080/contact";  },
+                  'home': function() { window.location="http://localhost:8080/#home";  },
+                  'about': function() { window.location="http://localhost:8080/about";  },
+                  'work': function() { window.location="http://localhost:8080/work";  },
+                  'contact': function() { window.location="http://localhost:8080/contact";  },
+                  'up': function() { window.location="http://localhost:8080/#home";  },
+                  'down': function() { window.location="http://localhost:8080/#contact";  },
                   };
+
                   // Add our commands to annyang
                   annyang.addCommands(commands);
                   // Start listening.
