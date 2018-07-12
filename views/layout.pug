@@ -55,3 +55,17 @@ html
             script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js')
             script(src='https://unpkg.com/scrollreveal/dist/scrollreveal.min.js')
             script(src="./dist/main.bundle.js")
+            script(src='//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js')
+            script.
+                  if (annyang) {
+                  // Let's define a command.
+                  var commands = {
+                  'go': function() { alert('Hello world!'); },
+                  'bye': function() { alert('bye bye world!'); }
+                  };
+                  // Add our commands to annyang
+                  annyang.addCommands(commands);
+                  // Start listening.
+                  annyang.start();
+                  console.log('hiii')
+                  }

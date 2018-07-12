@@ -38,5 +38,26 @@ const ms = new MenuSpy(element, {
 });
 
 // handle submit function
+<<<<<<< Updated upstream
 const form = document.querySelector(".contact__form");
 form.addEventListener("submit", submitForm);
+=======
+// const form = document.querySelector(".contact__form");
+// form.addEventListener("submit", submitForm);
+
+// if (annyang) {
+//   // Let's define a command.
+//   var commands = {
+//     hello: function() {
+//       alert("Hello world!");
+//     }
+//   };
+
+//   // Add our commands to annyang
+//   annyang.addCommands(commands);
+
+//   // Start listening.
+//   annyang.start();
+//   console.log("start");
+// }
+>>>>>>> Stashed changes
