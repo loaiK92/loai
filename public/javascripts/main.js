@@ -100,7 +100,7 @@ if (annyang) {
     "submit": function() {
       // const form = document.querySelector(".contact__form");
       // form.addEventListener("submit", submitForm);
-      submitForm(form);
+      // submitForm(form);
       alert("Thanks for your message. I will answer it as soon as possible!");
       console.log("submitted message");
     }
