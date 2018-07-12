@@ -1,7 +1,7 @@
 import axios from "axios";
 
 function submitForm(e) {
-  e.preventDefault();
+  // e.preventDefault();
 
   const name = document.querySelector("#name").value;
   const email = document.querySelector("#email").value;

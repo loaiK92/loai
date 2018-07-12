@@ -98,9 +98,10 @@ if (annyang) {
       console.log("message: " + tag);
     },
     "submit": function() {
-      const form = document.querySelector(".contact__form");
-      form.addEventListener("submit", submitForm);
-      form.submit();
+      // const form = document.querySelector(".contact__form");
+      // form.addEventListener("submit", submitForm);
+      submitForm(form);
+      alert("Thanks for your message. I will answer it as soon as possible!");
       console.log("submitted message");
     }
   };
