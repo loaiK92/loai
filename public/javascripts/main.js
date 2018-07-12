@@ -77,14 +77,31 @@ if (annyang) {
     "down": function() {
       window.location = "http://localhost:8080/#contact";
     },
-    "name": function() {
-      document.querySelector('#name').focus();
-      console.log('works')
+    "name *tag": function(tag) {
+      let element = document.querySelector('#name')
+      element.focus();
+      element.value = tag;
+      console.log("name: " + tag);
+    },
+    "email *tag": function(tag) {
+      let element = document.querySelector('#email')
+      element.focus();
+      tag = tag.replace(" at ", "@");
+      tag = tag.replace(/\s/g, "");
+      element.value = tag;
+
+      console.log("mail: " + tag);
     }
   };
 
   // Add our commands to annyang
   annyang.addCommands(commands);
+
+  // annyang.addCallback('result', function(userSaid, commandText, phrases) {
+  //   console.log(userSaid); // sample output: 'hello'
+  //   console.log(commandText); // sample output: 'hello (there)'
+  //   console.log(phrases); // sample output: ['hello', 'halo', 'yellow', 'polo', 'hello kitty']
+  // });
   // Start listening.
   annyang.start();
   console.log("hiii");
