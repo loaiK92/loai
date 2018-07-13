@@ -120,9 +120,9 @@ header {
             transform: translateY(-20px); } }
 
 .intro .intro__home {
-  background-image: url(images/loai-2.jpg);
+  background-image: url(images/loai-3.png);
   background-size: cover;
-  background-position: 0% 15%;
+  background-position: center top;
   background-attachment: scroll; }
   .intro .intro__home .intro__home--content {
     text-align: right;
