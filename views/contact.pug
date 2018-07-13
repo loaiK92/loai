@@ -19,12 +19,18 @@ block main
                     p Don’t Hesitate to Drop me an Email or Contact me Via my Social Profiles.
                     .form-data
                         label.name(for='name') Name
-                        input#name.input(type='text' name='name')
+                        input#name.input(type='text' name='name' required)
                         label.email(for='email') Email
-                        input#email.input(type='email' name='email')
+                        input#email.input(type='email' name='email' required)
                     .form-msg
                         label.msg(for='msg') How can I help?
-                        textarea#msg.input(rows='5' name='text')
+                        textarea#msg.input(rows='5' name='text' required)
                     .form-submit
                         input.button(type='submit', value='Send')
-
+block scripts
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js")
+            script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js')
+            script(src='//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js')
+            script(src='https://unpkg.com/scrollreveal/dist/scrollreveal.min.js')
+            script(src="./dist/form.bundle.js")
+            script(src="./dist/main.bundle.js")

@@ -22,7 +22,7 @@ function submitForm(e) {
       );
     }
 
-    window.location = "/contact";
+    window.location = "/";
   });
 }
 

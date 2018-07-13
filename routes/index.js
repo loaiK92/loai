@@ -43,7 +43,7 @@ router.post("/contact/submit", async (req, res) => {
   };
   transport.sendMail(mailOptions, function(err, info) {
     if (err) {
-      console.log(err);
+      console.log("the error is ",err);
       res.status(304).json("not done");
     } else {
       console.log(info);
