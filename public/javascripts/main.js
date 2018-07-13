@@ -45,37 +45,37 @@ if (annyang) {
   // Let's define a command.
   var commands = {
     "go to home": function() {
-      window.location = "http://localhost:8080/#home";
+      window.location = "/#home";
     },
     "go to about": function() {
-      window.location = "http://localhost:8080/#about";
+      window.location = "/#about";
     },
     "go to work": function() {
-      window.location = "http://localhost:8080/#work";
+      window.location = "/#work";
     },
     "go to contact": function() {
-      window.location = "http://localhost:8080/#contact";
+      window.location = "/#contact";
     },
     "get in touch": function() {
-      window.location = "http://localhost:8080/contact";
+      window.location = "/contact";
     },
     "home": function() {
-      window.location = "http://localhost:8080/#home";
+      window.location = "/#home";
     },
     "about": function() {
-      window.location = "http://localhost:8080/about";
+      window.location = "/about";
     },
     "work": function() {
-      window.location = "http://localhost:8080/work";
+      window.location = "/work";
     },
     "contact": function() {
-      window.location = "http://localhost:8080/contact";
+      window.location = "/contact";
     },
     "up": function() {
-      window.location = "http://localhost:8080/#home";
+      window.location = "/#home";
     },
     "down": function() {
-      window.location = "http://localhost:8080/#contact";
+      window.location = "/#contact";
     },
     "name *tag": function(tag) {
       let element = document.querySelector('#name')
