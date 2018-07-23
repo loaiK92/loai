@@ -1,44 +1,45 @@
 .intro {
-    .intro__contact {
-        background: {
-            image: url("../images/pexels-1.jpeg");
-            size: cover;
-            position: center;
-            attachment: fixed;
-            color: #fff;
-        }
-        .intro__contact--content {
-            text-align: center;
-            padding: 6.5% 0 0;
-            h2 {
-                font-size: 2.5em;
-                padding: 2% 0 0;
-                
-                code {
-                    padding: 0 1%;
-                    font-weight: lighter;
-                    background: rgba(255, 255, 255, .6);
-                    a{
-                        color: #000;
-                    }
-                }
-            }
-            button {
-                margin: 5% 0 4%;
-            }
-        }
-        .intro__contact--social {
-            width: 30%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-evenly;
-            padding-bottom: 2.5%;
-            img{
-                &:hover {
-                    transform: scale(1.2);
-                    transition: .2s linear;
-                }
-            }
-        }
+  .intro__contact {
+    height: 80vh;
+    background: {
+      image: url("../images/loai-contact.png");
+      size: cover;
+      position: center bottom;
+      attachment: fixed;
+      color: #fff;
     }
+    .intro__contact--content {
+      text-align: center;
+      padding: 6.5% 0 0;
+      h2 {
+        font-size: 2.5em;
+        padding: 2% 0 0;
+
+        code {
+          padding: 0 1%;
+          font-weight: lighter;
+          background: rgba(255, 255, 255, 0.6);
+          a {
+            color: #000;
+          }
+        }
+      }
+      button {
+        margin: 5% 0 4%;
+      }
+    }
+    .intro__contact--social {
+      width: 30%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-evenly;
+      padding-bottom: 2.5%;
+      img {
+        &:hover {
+          transform: scale(1.2);
+          transition: 0.2s linear;
+        }
+      }
+    }
+  }
 }

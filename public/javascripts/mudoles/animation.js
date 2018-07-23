@@ -112,6 +112,46 @@ $(document).ready(function() {
     opacity: 0
   });
 
+  sr.reveal(".card-1", {
+    origin: "left",
+    distance: "200px",
+    delay: 100,
+    duration: 500,
+    easing: "cubic-bezier(.44,.44,.75,1.18)",
+    opacity: 0
+  });
+  sr.reveal(".card-2", {
+    origin: "top",
+    distance: "200px",
+    delay: 500,
+    duration: 500,
+    easing: "cubic-bezier(.44,.44,.75,1.18)",
+    opacity: 0
+  });
+  sr.reveal(".card-3", {
+    origin: "bottom",
+    distance: "200px",
+    delay: 900,
+    duration: 500,
+    easing: "cubic-bezier(.44,.44,.75,1.18)",
+    opacity: 0
+  });
+  sr.reveal(".card-4", {
+    origin: "right",
+    distance: "200px",
+    delay: 1200,
+    duration: 500,
+    easing: "cubic-bezier(.44,.44,.75,1.18)",
+    opacity: 0
+  });
+
+  // $(".image-card").on("mouseover", () => {
+  //   $(this).css({
+  //     transition: "all 0.2s linear 0 !important",
+  //     transform: "scale(2) !important"
+  //   });
+  // });
+
   // set intro__qoutes slider from slick-sliders
   $(".intro__qoutes--items").slick({
     slidesToShow: 1,

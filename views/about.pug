@@ -1,6 +1,6 @@
 extends layout
 block header
-    header
+    header#header
         nav
             ul.nav__main
                 li.nav__item.nav__left
@@ -11,6 +11,19 @@ block header
                     a(href="/work") work
                 li.nav__item.nav__right
                     a(href="/contact") contact
+    header#header-menu
+        label(for="menu") &#9776;
+        input(type="checkbox" id="menu" name="menu")
+        nav#nav
+            ul.nav__menu
+                li.nav__item-menu
+                        a(href="/") home
+                li.nav__item-menu
+                        a(href="/about") about
+                li.nav__item-menu
+                        a(href="/work") work
+                li.nav__item-menu
+                        a(href="/contact") contact
 block main
       .inner
         .about__section
@@ -31,12 +44,12 @@ block main
                             .skills--content-header
                                 h3 Front-End
                             .skills--content-body
-                                h5 LANGUAGES
+                                h5 
                                 ul
                                     li html
                                     li css3
                                     li javascript
-                                h5 FRAMEWORKS
+                                h5 
                                 ul
                                     li react
                                     li jquery
@@ -47,7 +60,7 @@ block main
                             .skills--content-header
                                 h3 Tools
                             .skills--content-body 
-                                h5 General Tools
+                                h5 
                                 ul
                                     li pug
                                     li webpack
@@ -65,12 +78,12 @@ block main
                             .skills--content-header
                                 h3 Back-End
                             .skills--content-body
-                                h5 LANGUAGES
+                                h5 
                                 ul
                                     li NODE JS
                                     li MongoDB
                                     li MYSQL
-                                h5 FRAMEWORKS
+                                h5 
                                 ul
                                     li Express JS
                                     li Socket.io

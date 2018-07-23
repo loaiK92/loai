@@ -1,29 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:400|Noto+Sans:700|Roboto:900');
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:400|Noto+Sans:700|Roboto:900");
 
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .cf:after {
-    clear: both;
+  clear: both;
 }
 
-h1,h2,h3,h4,h5{
-    font-family: 'Noto Sans', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Noto Sans", sans-serif;
 }
 
-a{
+a {
+  text-decoration: none;
+  &:hover {
     text-decoration: none;
-    &:hover{
-        text-decoration: none;
-    }
-    &:focus{
-        outline: none;
-    }
-}
-
-button{
-    
+  }
+  &:focus {
+    outline: none;
+  }
 }

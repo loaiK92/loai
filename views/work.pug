@@ -1,6 +1,6 @@
 extends layout
 block header
-    header
+    header#header
         nav
             ul.nav__main
                 li.nav__item.nav__left
@@ -11,10 +11,46 @@ block header
                     a(href="/work") work
                 li.nav__item.nav__right
                     a(href="/contact") contact
+    header#header-menu
+        label(for="menu") &#9776;
+        input(type="checkbox" id="menu" name="menu")
+        nav#nav
+            ul.nav__menu
+                li.nav__item-menu
+                        a(href="/") home
+                li.nav__item-menu
+                        a(href="/about") about
+                li.nav__item-menu
+                        a(href="/work") work
+                li.nav__item-menu
+                        a(href="/contact") contact
 block main
         .inner
             .work__section
                 .work--header
                     h2 WORKS
                 .work--content
-                    h1 Coming Soon ...
+                    a(href="https://worldcup-2018.herokuapp.com/" target="blank")
+                        .image-card.img-card-2
+                            span.card-title World_Cup
+                    a(href="https://my-blog-2018.herokuapp.com/" target="blank")
+                        .image-card.img-card-1
+                            span.card-title My_Blog
+                    a(href="https://loaik92.github.io/Drum/" target="blank")
+                        .image-card.img-card-3
+                            span.card-title Drum_Kit
+                    a(href="https://seafood-store.herokuapp.com/" target="blank")    
+                        .image-card.img-card-4
+                            span.card-title Sea_Food
+                    a(href="https://youtube-api-2018.herokuapp.com/" target="blank")
+                        .image-card.img-card-5
+                            span.card-title Youtube_API
+                .work--footer
+                    .work--footer-header
+                        p To See More Visit My 
+                            a(href="https://github.com/loaiK92?tab=repositories" target="_blank") GITHUB 
+                            | And 
+                            a(href="https://codepen.io/dashboard?type=view&opts_itemType=pen&opts_filter=all&opts_orderBy=id&opts_orderDirection=0&opts_tag=0&displayType=grid&previewType=iframe&page=1" target="_blank") CODEPEN 
+                            | Accounts
+                    
+                        

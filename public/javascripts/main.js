@@ -35,3 +35,27 @@ const ms = new MenuSpy(element, {
   enableLocationHash: true,
   hashTimeout: 600
 });
+
+// projects click handler in 'WORK'
+document.querySelectorAll(".intro__work--content .image-card").forEach(item => {
+  item.addEventListener("click", e => {
+    if (e.target.dataset.href) {
+      document.location = e.target.dataset.href;
+    } else {
+      return;
+    }
+  });
+});
+
+// handling nav-Btn for mobil screen
+const navBtn = document.getElementById("menu");
+const nav = document.getElementById("nav");
+navBtn.addEventListener("click", () => {
+  if (navBtn.checked) {
+    nav.classList.remove("activ-nav");
+  }
+});
+nav.addEventListener("click", () => {
+  nav.classList.add("activ-nav");
+  navBtn.checked = false;
+});

@@ -2,6 +2,23 @@
   .intro__home--content {
     font-size: 0.8em;
   }
+  .work--content {
+    .img-card-1 {
+      width: 400px !important;
+    }
+    .img-card-2 {
+      width: 300px !important;
+    }
+    .img-card-3 {
+      width: 300px !important;
+    }
+    .img-card-4 {
+      width: 450px !important;
+    }
+    .img-card-5 {
+      width: 450px !important;
+    }
+  }
 }
 
 @media (max-width: 1200px) {
@@ -57,6 +74,14 @@
   .footer__content {
     font-size: 0.8em;
   }
+  .intro__work {
+    .intro__work--content {
+      width: 100% !important;
+    }
+    .intro__work--footer {
+      padding: 0 0 5% !important;
+    }
+  }
   .intro__qoutes--content {
     width: 65% !important;
   }
@@ -84,10 +109,37 @@
         border-radius: 10px !important;
       }
     }
+    .work--content {
+      width: 100% !important;
+      .image-card {
+        height: 175px !important;
+      }
+      .img-card-1 {
+        width: 340px !important;
+      }
+      .img-card-2 {
+        width: 240px !important;
+      }
+      .img-card-3 {
+        width: 240px !important;
+      }
+      .img-card-4 {
+        width: 400px !important;
+      }
+      .img-card-5 {
+        width: 400px !important;
+      }
+    }
   }
 }
 
 @media (max-width: 900px) {
+  #header {
+    display: none;
+  }
+  #header-menu {
+    display: flex;
+  }
   .intro__home--content {
     font-size: 0.4em;
     padding: 8% 8% 25% 0 !important;
@@ -139,8 +191,23 @@
       }
     }
   }
+  .intro__work {
+    .intro__work--content {
+      .image-card {
+        height: 200px !important;
+        .content-card {
+          &:hover > .card-title {
+            transform: translateY(25px) !important;
+          }
+        }
+      }
+    }
+  }
   .intro__qoutes--content {
     width: 65% !important;
+  }
+  .intro__contact {
+    height: 60vh !important;
   }
   .button {
     border-radius: 5px !important;
@@ -180,6 +247,16 @@
         border-radius: 5px !important;
       }
     }
+    .work--content {
+      width: 100% !important;
+      a {
+        margin: 2% 2% 5%;
+        .image-card {
+          width: 275px !important;
+          height: 140px !important;
+        }
+      }
+    }
   }
   .contact__section {
     font-size: 0.8em;
@@ -196,6 +273,14 @@
 }
 
 @media (max-width: 700px) {
+  #header-menu {
+    #nav {
+      top: 46.8px;
+    }
+    #menu:checked ~ #nav {
+      width: 75%;
+    }
+  }
   .intro__home--content {
     font-size: 0.3em;
     h1 {
@@ -281,9 +366,23 @@
         border-radius: 5px !important;
       }
     }
+    .intro__work--content {
+      .image-card {
+        height: 130px !important;
+        .content-card {
+          &:hover > .card-title {
+            transform: translateY(25px) !important;
+          }
+        }
+      }
+    }
   }
   .intro__qoutes--content {
     width: 75% !important;
+  }
+  .intro__contact {
+    height: 50vh !important;
+    background-size: 100% !important;
   }
   .button {
     border-radius: 5px !important;
@@ -331,6 +430,22 @@
 
   .work__section {
     font-size: 0.4em !important;
+    .work--content {
+      width: 100% !important;
+      a {
+        margin: 2% 2% 5% 1%;
+        .image-card {
+          width: 230px !important;
+          height: 120px !important;
+          .card-title {
+            transform: translateY(15px);
+          }
+          &:hover > .card-title {
+            transform: translateY(20px);
+          }
+        }
+      }
+    }
   }
 
   .contact__section {
@@ -354,6 +469,19 @@
 }
 
 @media (max-width: 500px) {
+  #header-menu {
+    label[for="menu"] {
+      font-size: 1.3em;
+    }
+    #nav {
+      top: 31.3px;
+    }
+    #menu:checked ~ #nav {
+      a {
+        font-size: 0.8em;
+      }
+    }
+  }
   .intro__home--content {
     font-size: 0.2em;
     h1 {
@@ -402,6 +530,30 @@
       }
     }
   }
+  .intro__work {
+    .intro__work--content {
+      flex-direction: column !important;
+      .image-card {
+        height: 130px !important;
+        width: 70% !important;
+        margin: 3% 2% 5% 1% !important;
+        .content-card {
+          .card-title {
+            transform: translateY(15px) !important;
+          }
+          &:hover > .card-title {
+            transform: translateY(20px) !important;
+          }
+        }
+      }
+    }
+    .intro__work--footer {
+      padding: 2% 0 5% !important;
+      a {
+        padding: 7px 18px !important;
+      }
+    }
+  }
   .intro__qoutes,
   .intro__work,
   .intro__contact,
@@ -421,6 +573,18 @@
   }
   .intro__qoutes--content {
     width: 85% !important;
+  }
+  .intro__contact {
+    height: 40vh !important;
+    background-size: 150% !important;
+    .intro__contact--content {
+      h2 {
+        padding: 4% 0 0 !important;
+      }
+      button {
+        margin: 8% 0 !important;
+      }
+    }
   }
   .button {
     border-radius: 5px !important;
@@ -456,6 +620,24 @@
     .skills--border--backend {
       width: 28% !important;
       border-width: 3px !important;
+    }
+  }
+  .work__section {
+    .work--content {
+      width: 100% !important;
+      a {
+        margin: 3% 2% 5%;
+        .image-card {
+          width: 290px !important;
+          height: 175px !important;
+          .card-title {
+            transform: translateY(15px);
+          }
+          &:hover > .card-title {
+            transform: translateY(20px);
+          }
+        }
+      }
     }
   }
   .contact__section {
