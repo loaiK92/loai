@@ -984,7 +984,7 @@ footer .footer__content {
       padding: 0 0 10%; }
       .intro__aboutMe .intro__skills .intro__skills--content .skills--frontend {
         width: 170px !important;
-        height: 300px !important; }
+        height: 260px !important; }
         .intro__aboutMe .intro__skills .intro__skills--content .skills--frontend .frontend--border {
           width: 90% !important;
           height: 84% !important;
@@ -995,7 +995,7 @@ footer .footer__content {
                   transform: translate(15px, -98%) !important; }
       .intro__aboutMe .intro__skills .intro__skills--content .skills--backend {
         width: 170px !important;
-        height: 300px !important; }
+        height: 260px !important; }
         .intro__aboutMe .intro__skills .intro__skills--content .skills--backend .backend--border {
           width: 90% !important;
           height: 83% !important;
@@ -1074,14 +1074,14 @@ footer .footer__content {
     font-size: 0.5em; }
     .intro__aboutMe .intro__skills .intro__skills--content .skills--frontend {
       width: 140px !important;
-      height: 200px !important; }
+      height: 180px !important; }
       .intro__aboutMe .intro__skills .intro__skills--content .skills--frontend .frontend--content {
         -webkit-transform: translate(10px, -96%) !important;
             -ms-transform: translate(10px, -96%) !important;
                 transform: translate(10px, -96%) !important; }
     .intro__aboutMe .intro__skills .intro__skills--content .skills--backend {
       width: 140px !important;
-      height: 200px !important; }
+      height: 180px !important; }
       .intro__aboutMe .intro__skills .intro__skills--content .skills--backend .backend--content {
         -webkit-transform: translate(10px, -99%) !important;
             -ms-transform: translate(10px, -99%) !important;
@@ -1192,14 +1192,14 @@ footer .footer__content {
         font-size: 1.4em !important; }
         .intro__aboutMe .intro__skills .intro__skills--content .skills--frontend {
           width: 35% !important;
-          height: 285px !important; }
+          height: 250px !important; }
           .intro__aboutMe .intro__skills .intro__skills--content .skills--frontend .frontend--content {
             -webkit-transform: translate(10px, -96%) !important;
                 -ms-transform: translate(10px, -96%) !important;
                     transform: translate(10px, -96%) !important; }
         .intro__aboutMe .intro__skills .intro__skills--content .skills--backend {
           width: 35% !important;
-          height: 285px !important; }
+          height: 250px !important; }
           .intro__aboutMe .intro__skills .intro__skills--content .skills--backend .backend--content {
             -webkit-transform: translate(10px, -99%) !important;
                 -ms-transform: translate(10px, -99%) !important;
@@ -1309,14 +1309,14 @@ footer .footer__content {
       font-size: 1.4em !important; }
       .intro__aboutMe .intro__skills .intro__skills--content .skills--frontend {
         width: 40% !important;
-        height: 245px !important; }
+        height: 220px !important; }
         .intro__aboutMe .intro__skills .intro__skills--content .skills--frontend .frontend--content {
           -webkit-transform: translate(10px, -96%) !important;
               -ms-transform: translate(10px, -96%) !important;
                   transform: translate(10px, -96%) !important; }
       .intro__aboutMe .intro__skills .intro__skills--content .skills--backend {
         width: 40% !important;
-        height: 245px !important; }
+        height: 220px !important; }
         .intro__aboutMe .intro__skills .intro__skills--content .skills--backend .backend--content {
           -webkit-transform: translate(10px, -98%) !important;
               -ms-transform: translate(10px, -98%) !important;
