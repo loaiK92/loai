@@ -144,13 +144,14 @@ $(document).ready(function() {
     easing: "cubic-bezier(.44,.44,.75,1.18)",
     opacity: 0
   });
-
-  // $(".image-card").on("mouseover", () => {
-  //   $(this).css({
-  //     transition: "all 0.2s linear 0 !important",
-  //     transform: "scale(2) !important"
-  //   });
-  // });
+  sr.reveal(".card-5", {
+    origin: "bottom",
+    distance: "200px",
+    delay: 500,
+    duration: 500,
+    easing: "cubic-bezier(.44,.44,.75,1.18)",
+    opacity: 0
+  });
 
   // set intro__qoutes slider from slick-sliders
   $(".intro__qoutes--items").slick({

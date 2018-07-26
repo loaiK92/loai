@@ -37,15 +37,15 @@ const ms = new MenuSpy(element, {
 });
 
 // projects click handler in 'WORK'
-document.querySelectorAll(".intro__work--content .image-card").forEach(item => {
-  item.addEventListener("click", e => {
-    if (e.target.dataset.href) {
-      document.location = e.target.dataset.href;
-    } else {
-      return;
-    }
-  });
-});
+// document.querySelectorAll(".intro__work--content .image-card").forEach(item => {
+//   item.addEventListener("click", e => {
+//     if (e.target.dataset.href) {
+//       document.location = e.target.dataset.href;
+//     } else {
+//       return;
+//     }
+//   });
+// });
 
 // handling nav-Btn for mobil screen
 const navBtn = document.getElementById("menu");

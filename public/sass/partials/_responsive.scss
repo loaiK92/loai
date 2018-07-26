@@ -2,23 +2,6 @@
   .intro__home--content {
     font-size: 0.8em;
   }
-  .work--content {
-    .img-card-1 {
-      width: 400px !important;
-    }
-    .img-card-2 {
-      width: 300px !important;
-    }
-    .img-card-3 {
-      width: 300px !important;
-    }
-    .img-card-4 {
-      width: 450px !important;
-    }
-    .img-card-5 {
-      width: 450px !important;
-    }
-  }
 }
 
 @media (max-width: 1200px) {
@@ -75,9 +58,6 @@
     font-size: 0.8em;
   }
   .intro__work {
-    .intro__work--content {
-      width: 100% !important;
-    }
     .intro__work--footer {
       padding: 0 0 5% !important;
     }
@@ -109,26 +89,10 @@
         border-radius: 10px !important;
       }
     }
-    .work--content {
-      width: 100% !important;
-      .image-card {
-        height: 175px !important;
-      }
-      .img-card-1 {
-        width: 340px !important;
-      }
-      .img-card-2 {
-        width: 240px !important;
-      }
-      .img-card-3 {
-        width: 240px !important;
-      }
-      .img-card-4 {
-        width: 400px !important;
-      }
-      .img-card-5 {
-        width: 400px !important;
-      }
+  }
+  .work--content {
+    .img-container {
+      height: 200px;
     }
   }
 }
@@ -191,23 +155,13 @@
       }
     }
   }
-  .intro__work {
-    .intro__work--content {
-      .image-card {
-        height: 200px !important;
-        .content-card {
-          &:hover > .card-title {
-            transform: translateY(25px) !important;
-          }
-        }
-      }
-    }
-  }
+
   .intro__qoutes--content {
     width: 65% !important;
   }
   .intro__contact {
-    height: 60vh !important;
+    background-position: center bottom !important;
+    background-size: 100% !important;
   }
   .button {
     border-radius: 5px !important;
@@ -247,16 +201,6 @@
         border-radius: 5px !important;
       }
     }
-    .work--content {
-      width: 100% !important;
-      a {
-        margin: 2% 2% 5%;
-        .image-card {
-          width: 275px !important;
-          height: 140px !important;
-        }
-      }
-    }
   }
   .contact__section {
     font-size: 0.8em;
@@ -268,6 +212,11 @@
           top: 0;
         }
       }
+    }
+  }
+  .work--content {
+    .img-container {
+      height: 150px;
     }
   }
 }
@@ -366,13 +315,10 @@
         border-radius: 5px !important;
       }
     }
-    .intro__work--content {
-      .image-card {
-        height: 130px !important;
-        .content-card {
-          &:hover > .card-title {
-            transform: translateY(25px) !important;
-          }
+    .intro__work--footer {
+      a {
+        &:hover {
+          box-shadow: -1px 1px 3px #00ffd4, 1px -1px 3px #00ffd4 !important;
         }
       }
     }
@@ -381,12 +327,14 @@
     width: 75% !important;
   }
   .intro__contact {
-    height: 50vh !important;
     background-size: 100% !important;
   }
   .button {
     border-radius: 5px !important;
     padding: 10px 15px 6px !important;
+    &:hover {
+      box-shadow: -1px 1px 3px #00ffd4, 1px -1px 3px #00ffd4 !important;
+    }
   }
   .arrow-bottom {
     img {
@@ -430,22 +378,6 @@
 
   .work__section {
     font-size: 0.4em !important;
-    .work--content {
-      width: 100% !important;
-      a {
-        margin: 2% 2% 5% 1%;
-        .image-card {
-          width: 230px !important;
-          height: 120px !important;
-          .card-title {
-            transform: translateY(15px);
-          }
-          &:hover > .card-title {
-            transform: translateY(20px);
-          }
-        }
-      }
-    }
   }
 
   .contact__section {
@@ -465,6 +397,12 @@
   .animate-label {
     transform: translateY(-10px) !important;
     font-size: 12px !important;
+  }
+  .work--content {
+    width: 100% !important;
+    .img-container {
+      height: 150px;
+    }
   }
 }
 
@@ -531,22 +469,6 @@
     }
   }
   .intro__work {
-    .intro__work--content {
-      flex-direction: column !important;
-      .image-card {
-        height: 130px !important;
-        width: 70% !important;
-        margin: 3% 2% 5% 1% !important;
-        .content-card {
-          .card-title {
-            transform: translateY(15px) !important;
-          }
-          &:hover > .card-title {
-            transform: translateY(20px) !important;
-          }
-        }
-      }
-    }
     .intro__work--footer {
       padding: 2% 0 5% !important;
       a {
@@ -575,7 +497,6 @@
     width: 85% !important;
   }
   .intro__contact {
-    height: 40vh !important;
     background-size: 150% !important;
     .intro__contact--content {
       h2 {
@@ -622,24 +543,6 @@
       border-width: 3px !important;
     }
   }
-  .work__section {
-    .work--content {
-      width: 100% !important;
-      a {
-        margin: 3% 2% 5%;
-        .image-card {
-          width: 290px !important;
-          height: 175px !important;
-          .card-title {
-            transform: translateY(15px);
-          }
-          &:hover > .card-title {
-            transform: translateY(20px);
-          }
-        }
-      }
-    }
-  }
   .contact__section {
     font-size: 0.5em;
     .contact__form {
@@ -657,5 +560,17 @@
   .animate-label {
     transform: translateY(-10px) !important;
     font-size: 10px !important;
+  }
+  .work--content {
+    width: 100% !important;
+    .img-container {
+      height: 100px;
+    }
+    .link {
+      border-radius: 2px !important;
+      &:hover {
+        box-shadow: -1px 1px 2px #00ffd4, 1px -1px 2px #00ffd4 !important;
+      }
+    }
   }
 }

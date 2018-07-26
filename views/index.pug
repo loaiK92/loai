@@ -58,7 +58,7 @@ block main
                                                             h5 
                                                             ul
                                                                   li HTML
-                                                                  li CSS3
+                                                                  li CSS
                                                                   li Javascript
                                                             h5 
                                                             ul
@@ -87,21 +87,33 @@ block main
                   .intro__work#work
                         .intro__work--header
                               h2 Work
-                        .intro__work--content 
-                              .image-card.img-card-1.card-1(data-href="https://my-blog-2018.herokuapp.com/")
+                        .intro__work--content.work--content 
+                              .img-container.card-1
+                                    .image-card.img-card-1
                                     .content-card
-                                          span.card-title My_Blog
-                              .image-card.img-card-2.card-2(data-href="https://worldcup-2018.herokuapp.com/")
+                                          a(href="https://my-blog-2018.herokuapp.com/" target='blank' class='link project') Visit Project
+                                          a(href="https://github.com/loaiK92/my-blog" target='blank' class='link github') View In Github
+                                                
+                              .img-container.card-2
+                                    .image-card.img-card-2
                                     .content-card
-                                          span.card-title World_Cup
-                              .image-card.img-card-3.card-3(data-href="https://loaik92.github.io/Drum/")
-                                    .content-card      
-                                          span.card-title Drum_Kit
-                              .image-card.img-card-4.card-4(data-href="https://seafood-store.herokuapp.com//")
+                                          a(href="https://worldcup-2018.herokuapp.com/" target='blank' class='link project') Visit Project
+                                          a(href="https://github.com/loaiK92/worldcup2018" target='blank' class='link github') View In Github
+                                          
+                              .img-container.card-3
+                                    .image-card.img-card-3
                                     .content-card
-                                          span.card-title Sea_Food
+                                          a(href="https://loaik92.github.io/Drum/" target='blank' class='link project') Visit Project
+                                          a(href="https://github.com/loaiK92/Drum" target='blank' class='link github') View In Github
+
+                              .img-container.card-4
+                                    .image-card.img-card-4
+                                    .content-card
+                                          a(href="https://seafood-store.herokuapp.com/" target='blank' class='link project') Visit Project
+                                          a(href="https://github.com/loaiK92/seafood-store" target='blank' class='link github') View In Github
+
                         .intro__work--footer
-                              a(href="/work") View More                 
+                              a(href="/work") See More                 
 
 
                   .intro__qoutes
