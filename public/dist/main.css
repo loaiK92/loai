@@ -479,6 +479,10 @@ body {
           -ms-transform: translateX(0);
               transform: translateX(0);
       opacity: 1; }
+    .work--content .img-container:hover > .desc p {
+      opacity: 1;
+      -webkit-animation: mymove 0.8s linear;
+              animation: mymove 0.8s linear; }
     .work--content .img-container .image-card {
       width: 100%;
       height: 100%;
@@ -498,9 +502,26 @@ body {
         -o-transition: all 0.35s linear 0.1s;
         transition: all 0.35s linear 0.1s;
         opacity: 0; }
+    .work--content .img-container .desc {
+      width: 100%;
+      position: absolute;
+      top: 10%;
+      left: 0; }
+      .work--content .img-container .desc p {
+        padding: 5%;
+        color: #fff;
+        font-size: 1.2vw;
+        text-align: center;
+        opacity: 0;
+        text-transform: capitalize; }
+        .work--content .img-container .desc p .project-title {
+          color: #00ffd4;
+          font-weight: bold; }
+        .work--content .img-container .desc p .project-cont {
+          font-weight: bold; }
     .work--content .img-container .content-card {
       position: absolute;
-      top: 45%;
+      top: 70%;
       left: 0%;
       width: 100%;
       display: -webkit-box;
@@ -534,13 +555,35 @@ body {
     .work--content .img-container .img-card-1 {
       background-image: url(images/myBlog-pic-1.jpg); }
     .work--content .img-container .img-card-2 {
-      background-image: url(images/worldcup-pic-1.jpg); }
+      background-image: url(images/seafood-pic-1.jpg); }
     .work--content .img-container .img-card-3 {
       background-image: url(images/drum-pic-1.jpg); }
     .work--content .img-container .img-card-4 {
-      background-image: url(images/seafood-pic-1.jpg); }
+      background-image: url(images/worldcup-pic-1.jpg); }
     .work--content .img-container .img-card-5 {
       background-image: url(images/youtube-pic-1.jpg); }
+
+@-webkit-keyframes mymove {
+  0% {
+    -webkit-transform: translateY(-100%) scale(0);
+            transform: translateY(-100%) scale(0); }
+  65% {
+    -webkit-transform: translateY(15%) scale(1.1);
+            transform: translateY(15%) scale(1.1); }
+  100% {
+    -webkit-transform: translateY(0%) scale(1);
+            transform: translateY(0%) scale(1); } }
+
+@keyframes mymove {
+  0% {
+    -webkit-transform: translateY(-100%) scale(0);
+            transform: translateY(-100%) scale(0); }
+  65% {
+    -webkit-transform: translateY(15%) scale(1.1);
+            transform: translateY(15%) scale(1.1); }
+  100% {
+    -webkit-transform: translateY(0%) scale(1);
+            transform: translateY(0%) scale(1); } }
 
 .intro .intro__contact {
   background-image: url(images/loai-contact-2.png);
@@ -1084,7 +1127,9 @@ footer .footer__content {
   .work--content {
     width: 100% !important; }
     .work--content .img-container {
-      height: 150px; } }
+      height: 150px; }
+      .work--content .img-container .desc p {
+        font-size: 1.6vw !important; } }
 
 @media (max-width: 500px) {
   #header-menu label[for="menu"] {
@@ -1184,13 +1229,17 @@ footer .footer__content {
       width: 28% !important;
       border-width: 3px !important; }
   .contact__section {
-    font-size: 0.5em; }
+    font-size: 0.5em !important; }
     .contact__section .contact__form {
       width: 100% !important; }
+      .contact__section .contact__form textarea {
+        font-size: 1em !important; }
       .contact__section .contact__form .form-data label {
         top: 10px !important; }
       .contact__section .contact__form .form-data label[for="email"] {
         left: 57.6% !important; }
+      .contact__section .contact__form .form-data input {
+        font-size: 1em !important; }
   .animate-label {
     -webkit-transform: translateY(-10px) !important;
         -ms-transform: translateY(-10px) !important;
