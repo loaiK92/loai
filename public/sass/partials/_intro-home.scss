@@ -1,113 +1,138 @@
 @keyframes downTop {
-    0% { transform: translateY(-20px) }
-    50% { transform: translateY(0) }
-    100% { transform: translateY(-20px) }
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
-.intro{
-    .intro__home {
-        background: {
-            image: url("../images/loai-2.jpg");
-            size: cover;
-            position: 0% 15%;
-            attachment: scroll;
-        }
-        .intro__home--content {
-            text-align: right;
-            padding: 4% 8% 18% 0;
-            color: #222;
-            
-            h1 {
-                font-size: 4.8em;
-                font-family: 'Roboto', sans-serif;
-                letter-spacing: 15px;
-                display: block;
-                font-style: normal;
-                transform: scaleY(1.5);
-                margin-right: -55px;
-                text-decoration: underline;
-                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-            }
-            h4 {
-                font-style: normal;
-                transform: scaleY(1.5);
-                padding-bottom: 2%;
-                margin: 32px -33px 0 0;
-                font-size: 1.5em;
-                letter-spacing: 3px;
-                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-            }
-        }
-        .intro__home--arrow {
-            text-align: center;
-            padding-bottom: 5%;
-            .arrow{
-                animation: downTop 1.8s linear infinite;
-            }
-        }
+.intro {
+  .intro__home {
+    background: {
+      image: url("../images/loai-2.jpg");
+      size: cover;
+      position: 0% 15%;
+      attachment: scroll;
     }
-    
-    .intro__qoutes {
-        background: {
-            image: url("../images/wood-planks.jpg");
-            size: cover;
-            position: center;
-            attachment: fixed;
-        }
-        padding: 4% 0;
-        color: $white;
-        h2 {
-            text-align: center;
-            padding-bottom: 3%;
-            font-size: 1.7em;
-        }
-        .intro__qoutes--content {
-            width: 55%;
-            margin: 0 auto;
-            font-size: 1.5em;
-            .intro__qoutes--items {
-                li.intro__qoutes--li {
-                    // cursor: move; 
-                    &:focus{
-                        outline: none !important;
-                    }
-                    blockquote {
-                        padding: 2%;
-                        border-left: 1px solid #00FFD4;
-                        p {
-                            text-align: center;
-                            line-height: 1.3;
-                            code {
-                                color: #00FFD4;
-                                background: rgba(255,255,255,.1);
-                            }
-                        }
-                    }
-                    small {
-                        padding-left: 3%;
-                    }
-                }
-                .slick-arrow{
-                    display: none !important;
-                }
-                .slick-dots {
-                    display: none !important;
-                    li {
-                        &:hover > button{
-                            background: #00FFD4;
-                        }
-                        &:active {
-                            // background: #000;
-                        }
-                        button {
-                            background: #ccc;
-                            border-radius: 50%;
-                            &::before {
-                                content: '' !important;
-                            }
-                        }
-                    }
-                } 
-            }
-        }
+    .intro__home--content {
+      text-align: right;
+      padding: 4% 8% 18% 0;
+      color: #222;
+
+      h1 {
+        font-size: 4.8em;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 15px;
+        display: block;
+        font-style: normal;
+        transform: scaleY(1.5);
+        margin-right: -55px;
+        text-decoration: underline;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+      }
+      h4 {
+        font-style: normal;
+        transform: scaleY(1.5);
+        padding-bottom: 2%;
+        margin: 32px -33px 0 0;
+        font-size: 1.5em;
+        letter-spacing: 3px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+      }
     }
+    .intro__home--arrow {
+      text-align: center;
+      padding-bottom: 5%;
+      .arrow {
+        animation: downTop 1.8s linear infinite;
+      }
+    }
+  }
+
+  .intro__qoutes {
+    background: {
+      image: url("../images/wood-planks.jpg");
+      size: cover;
+      position: center;
+      attachment: fixed;
+    }
+    padding: 4% 0;
+    color: $white;
+    h2 {
+      text-align: center;
+      padding-bottom: 3%;
+      font-size: 1.7em;
+    }
+    .intro__qoutes--content {
+      width: 55%;
+      margin: 0 auto;
+      font-size: 1.5em;
+      text-align: center;
+      .intro__qoutes--items {
+        li.intro__qoutes--li {
+          // cursor: move;
+          &:focus {
+            outline: none !important;
+          }
+          blockquote {
+            padding: 2%;
+            border-left: 1px solid #00ffd4;
+            p {
+              text-align: center;
+              line-height: 1.3;
+              code {
+                color: #00ffd4;
+                background: rgba(255, 255, 255, 0.1);
+              }
+            }
+          }
+
+          small {
+            padding-left: 3%;
+          }
+        }
+
+        .slick-arrow {
+          display: none !important;
+        }
+        .slick-dots {
+          display: none !important;
+          li {
+            &:hover > button {
+              background: #00ffd4;
+            }
+            &:active {
+              // background: #000;
+            }
+            button {
+              background: #ccc;
+              border-radius: 50%;
+              &::before {
+                content: "" !important;
+              }
+            }
+          }
+        }
+      }
+      a {
+        color: #000;
+        background: #00ffd4;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.3vw;
+        padding: 10px 25px;
+        -webkit-transition: all 0.2s linear !important;
+        -o-transition: all 0.2s linear !important;
+        transition: all 0.2s linear !important;
+        &:hover {
+          box-shadow: -1px 1px 7px #00ffd4, 1px -1px 7px #00ffd4;
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }

@@ -158,6 +158,10 @@
 
   .intro__qoutes--content {
     width: 65% !important;
+    a {
+      font-size: 2vw !important;
+      padding: 8px 15px !important;
+    }
   }
   .intro__contact {
     background-position: center bottom !important;
@@ -325,6 +329,10 @@
   }
   .intro__qoutes--content {
     width: 75% !important;
+    a {
+      font-size: 2vw !important;
+      padding: 8px 15px !important;
+    }
   }
   .intro__contact {
     background-size: 100% !important;
@@ -500,6 +508,11 @@
   }
   .intro__qoutes--content {
     width: 85% !important;
+    a {
+      font-size: 2vw !important;
+      padding: 8px 15px !important;
+      border-radius: 3px !important;
+    }
   }
   .intro__contact {
     background-size: 150% !important;
