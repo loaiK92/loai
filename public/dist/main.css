@@ -630,14 +630,25 @@ body {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    padding-bottom: 2.5%; }
-    .intro .intro__contact .intro__contact--social img:hover {
-      -webkit-transform: scale(1.2);
-          -ms-transform: scale(1.2);
-              transform: scale(1.2);
-      -webkit-transition: 0.2s linear;
-      -o-transition: 0.2s linear;
-      transition: 0.2s linear; }
+    padding: 2.5% 0 1%;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .intro .intro__contact .intro__contact--social img {
+      padding: 0.3vw;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 3px; }
+      .intro .intro__contact .intro__contact--social img:hover {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+        -webkit-transition: 0.2s linear;
+        -o-transition: 0.2s linear;
+        transition: 0.2s linear;
+        -webkit-box-shadow: -1px 1px 3px #777, 1px -1px 3px #777;
+                box-shadow: -1px 1px 3px #777, 1px -1px 3px #777; }
+    .intro .intro__contact .intro__contact--social .github {
+      padding: 1px; }
 
 footer .footer__content {
   padding: 1% 0; }
@@ -1232,8 +1243,8 @@ footer .footer__content {
     .intro__contact .intro__contact--content button {
       margin: 8% 0 !important; }
   .button {
-    border-radius: 5px !important;
-    padding: 5px 8px 4px !important; }
+    border-radius: 3px !important;
+    padding: 7px 8px 6px !important; }
   .arrow-bottom {
     display: none !important; }
     .arrow-bottom img {
