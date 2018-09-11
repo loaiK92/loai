@@ -67,12 +67,6 @@
   }
   .about__section {
     font-size: 0.8em;
-    .aboutme--header {
-      width: 20% !important;
-    }
-    .skills--header {
-      width: 25% !important;
-    }
     .skills--border--frontend,
     .skills--border--tools,
     .skills--border--backend {
@@ -183,12 +177,6 @@
   }
   .about__section {
     font-size: 0.6em;
-    .aboutme--header {
-      width: 20% !important;
-    }
-    .skills--header {
-      width: 25% !important;
-    }
     .skills--border--frontend,
     .skills--border--tools,
     .skills--border--backend {
@@ -234,6 +222,11 @@
       width: 75%;
     }
   }
+  .heading-title {
+    .title-span {
+      height: 2px !important;
+    }
+  }
   .intro__home--content {
     font-size: 0.3em;
     h1 {
@@ -259,7 +252,6 @@
       .intro__about--header {
         width: 100% !important;
         h2 {
-          width: 20% !important;
           margin: 0 auto !important;
           padding: 1% !important;
           border-radius: 5px !important;
@@ -278,7 +270,6 @@
       .intro__skills--header {
         width: 100% !important;
         h2 {
-          width: 20% !important;
           margin: 0 auto !important;
           padding: 1% !important;
           border-radius: 5px !important;
@@ -313,12 +304,6 @@
     font-size: 0.5em;
   }
   .intro__work {
-    .intro__work--header {
-      h2 {
-        width: 20% !important;
-        border-radius: 5px !important;
-      }
-    }
     .intro__work--footer {
       a {
         &:hover {
@@ -364,18 +349,6 @@
   }
   .about__section {
     font-size: 0.5em;
-    .aboutme--header {
-      width: 20% !important;
-      h2 {
-        border-radius: 5px !important;
-      }
-    }
-    .skills--header {
-      width: 28% !important;
-      h2 {
-        border-radius: 5px !important;
-      }
-    }
     .skills--border--frontend,
     .skills--border--tools,
     .skills--border--backend {
@@ -542,17 +515,10 @@
   }
   .about__section {
     font-size: 0.4em;
-    .aboutme--header {
-      width: 20% !important;
-      padding: 5% 0 2% !important;
-    }
     .aboutme--content {
       p {
         font-size: 1.6em !important;
       }
-    }
-    .skills--header {
-      width: 35% !important;
     }
     .skills--border--frontend,
     .skills--border--tools,

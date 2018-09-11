@@ -1,15 +1,14 @@
 .work__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 85vh;
   .work--header {
-    width: 15%;
     margin: 0 auto;
     padding: 3% 0 0;
     h2 {
       text-align: center;
-      background: #000;
-      color: #fff;
-      padding: 2%;
-      border-radius: 5px;
-      box-shadow: -3px 4px 10px #000;
+      color: #000;
     }
   }
 
@@ -21,8 +20,18 @@
         font-size: 1.5em;
         border-bottom: 0.5px solid #000;
         a {
-          color: #4e32f0;
+          color: #000;
+          background: #00ffd4;
+          border: none;
+          border-radius: 5px;
+          padding: 4px 13px;
+          margin-right: 7px;
+          -webkit-transition: all 0.2s linear !important;
+          -o-transition: all 0.2s linear !important;
+          transition: all 0.2s linear !important;
           &:hover {
+            box-shadow: -1px 1px 3px #00ffd4, 1px -1px 3px #00ffd4;
+            color: #fff;
             font-weight: bold;
           }
         }

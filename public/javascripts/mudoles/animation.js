@@ -23,13 +23,13 @@ $(document).ready(function() {
     duration: 500,
     easing: "cubic-bezier(.61,.19,.44,1.37)"
   });
-  sr.reveal(".intro__home--content", {
-    origin: "bottom",
-    distance: "100px",
-    delay: 1200,
-    duration: 300,
-    easing: "cubic-bezier(.44,.44,.75,1.18)"
-  });
+  // sr.reveal(".intro__home--content", {
+  //   origin: "bottom",
+  //   distance: "100px",
+  //   delay: 1200,
+  //   duration: 300,
+  //   easing: "cubic-bezier(.44,.44,.75,1.18)"
+  // });
   sr.reveal(".intro__about", {
     origin: "left",
     distance: "500px",

@@ -51,9 +51,10 @@ const images = {
 
 module.exports = {
   mode: "production",
-  entry: {main: "./public/javascripts/main.js",
-          form: "./public/javascripts/form.js"
-        },
+  entry: {
+    main: "./public/javascripts/main.js",
+    form: "./public/javascripts/form.js"
+  },
   output: {
     path: path.resolve(__dirname, "public", "dist"),
     filename: "[name].bundle.js"
