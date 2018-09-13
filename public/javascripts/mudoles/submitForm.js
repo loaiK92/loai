@@ -11,19 +11,22 @@ function submitForm(e) {
     email: email,
     text: text
   };
-  axios.post(this.action, body).then(res => {
-    if (res.status == 200) {
-      window.alert(
-        "Thank You \nYour Mail Has Been Sent Successfully \nI'll Respond You As Soon As Possible."
-      );
-    } else {
+  axios
+    .post(this.action, body)
+    .then(res => {
+      if (res.status == 200) {
+        window.alert(
+          "Thank You, \nYour Mail Has Been Sent Successfully, \nI'll Reply You As Soon As Possible."
+        );
+      }
+
+      window.location = "/";
+    })
+    .catch(error => {
       window.alert(
         "Unfortunately Your Email Wasn't Sent Correctly, \nPlease Check Your Email And Try Again Later"
       );
-    }
-
-    window.location = "/";
-  });
+    });
 }
 
 export default submitForm;
