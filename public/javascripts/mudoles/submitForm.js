@@ -14,7 +14,6 @@ function submitForm(e) {
   axios
     .post(this.action, body)
     .then(res => {
-      console.log("response is", res);
       if (res.status == 200) {
         window.alert(
           "Thank You, \nYour Mail Has Been Sent Successfully, \nI'll Reply You As Soon As Possible."
@@ -27,7 +26,6 @@ function submitForm(e) {
       window.alert(
         "Unfortunately Your Email Wasn't Sent Correctly, \nPlease Check Your Email And Try Again Later"
       );
-      console.log("error response is", error.response);
     });
 }
 

@@ -12,8 +12,8 @@ const transport = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: "loaiwebsite723@gmail.com",
-    pass: "nawaf1992kahel"
+    user: process.env.MAIL_USER,
+    pass: process.env.MAIL_PASS
   },
   tls: {
     // do not fail on invalid certs
